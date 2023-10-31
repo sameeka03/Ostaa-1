@@ -1,13 +1,12 @@
   // Name- Sameeka Maroli
   // Task: Client side javascript that connects to the server
 
-// a function to add items to the mongo database on the server using POST requests
-function addItem(){
+function addItem(){ // a function to add items to the mongo database on the server using POST requests
+  var price = document.getElementById("cost").value;
+  var status = document.getElementById("status").value;
   var title = document.getElementById("title").value;
   var desc = document.getElementById("description").value;
   var img = document.getElementById("image").value;
-  var price = document.getElementById("cost").value;
-  var status = document.getElementById("status").value;
   var owner = document.getElementById("owner").value;
   let path = "/add/item/" + owner;
   req = fetch(path ,{
@@ -23,6 +22,8 @@ function addItem(){
       'Content-type': 'application/json; charset=UTF-8',
       }
     });
+
+    // ensures the tetx dissapears after submitting
   req.then((response) => {
       console.log("Request was a Success");
       document.getElementById("title").value="";
@@ -51,6 +52,8 @@ req = fetch(path ,{
     'Content-type': 'application/json; charset=UTF-8',
     }
   });
+  
+  // ensures the text dissapears after submitting
   req.then((response) => {
     console.log("successful");
     document.getElementById("user").value="";
@@ -58,16 +61,3 @@ req = fetch(path ,{
     }
 )
 }
-
-// // this function helps parse and output the get requests
-// function getGet(){
-//   let path = "/get/";
-//   req = fetch(path)
-//       req.then((response) => {
-//           return response.text();
-//         })
-//       .then((text) => {
-//         // Output
-//         document.getElementById("ostaa").innerHTML=text
-//       })
-// }
