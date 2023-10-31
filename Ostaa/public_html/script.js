@@ -25,6 +25,13 @@ function addItem(){
     });
   req.then((response) => {
       console.log("Request was a Success");
+      document.getElementById("title").value="";
+      document.getElementById("description").value="";
+      document.getElementById("image").value="";
+      document.getElementById("cost").value="";
+      document.getElementById("status").value="";
+      document.getElementById("owner").value="";
+
       }
   )
 }
