@@ -1,0 +1,32 @@
+<!--   Sameeka Maroli
+       Task: Create a simple client side to add user and item -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ostaa</title>
+    <link id="cssFile" rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body id="body">
+      <div id="ostaa">
+      <table id="addUser"><th>Add User</th>
+        <tr ><td><label>Username</label></td><td><input type="text" id="user"></td></tr>
+        <tr ><td><label>Password</label></td><td><input type="text" id="pwd"></td></tr>
+        <tr><td><input type="submit" id="addUserButton" value="Add User" onclick="addUser()"></td></tr>
+      </table>
+
+      
+      <table id="addItem"><th>Add Item</th>
+        <tr ><td><label>Title</label></td><td><input type="text" id="title"></td></tr>
+        <tr ><td><label>Desc</label></td><td><input id="description" type="text"></td></tr>
+        <tr ><td><label>Image</label></td><td><input id="image" type="text"></td></tr>
+        <tr ><td><label>Price</label></td><td><input id="cost" type="text"></td></tr>
+        <tr ><td><label>Status</label></td><td><input id="status" type="text"></td></tr>
+        <tr ><td><label>Username</label></td><td><input id="owner" type="text"></td></tr>
+        <tr><td><input type="submit" id="addItemButton" value="Add Item" onclick="addItem()"></td></tr>
+      </table>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

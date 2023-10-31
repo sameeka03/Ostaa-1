@@ -1,0 +1,21 @@
+/* Sameeka Maroli
+Task: Add styling to the client webpage
+*/
+
+th{
+	font-size: 25px;
+}
+
+table{
+	margin-left: 20px;
+	margin-top: 5%;
+}
+
+body{
+	margin: 0;
+	background-color: coral
+}
+
+tr{
+	font-size: 25px;
+}
