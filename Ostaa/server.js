@@ -9,10 +9,10 @@ const mongoServerURL='mongodb://127.0.0.1:27017/pa8';
 
 mongo.connect(mongoServerURL, {useNewUrlParser:true});	
 
-mongoose.connection.once('open',_ => {
+mongo.connection.once('open',_ => {
 	console.log('Database connected', mongo_url);
 });
-mongoose.connection.once('error', er => {
+mongo.connection.once('error', er => {
 	console.log('Connection error', er);
 });
 
