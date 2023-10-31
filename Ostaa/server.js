@@ -60,6 +60,11 @@ server.post("/add/item/:USERNAME", (req, res) =>{
 			}
 		}
 	})
+
+	.catch( (error) => {
+        console.log('THERE WAS A PROBLEM');
+        console.log(error);
+		
     res.send();
 });
 
