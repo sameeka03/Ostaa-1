@@ -4,7 +4,7 @@
 // a function to add items to the mongo database on the server using POST requests
 function addItem(){
   var title = document.getElementById("title").value;
-  var desc = document.getElementById("desc").value;
+  var desc = document.getElementById("description").value;
   var img = document.getElementById("image").value;
   var price = document.getElementById("cost").value;
   var status = document.getElementById("status").value;
@@ -46,21 +46,21 @@ req = fetch(path ,{
   });
   req.then((response) => {
     console.log("successful");
-    document.getElementById("username").value="";
+    document.getElementById("user").value="";
     document.getElementById("pwd").value="";
     }
 )
 }
 
-// this function helps parse and output the get requests
-function getGet(){
-  let path = "/get/";
-  req = fetch(path)
-      req.then((response) => {
-          return response.text();
-        })
-      .then((text) => {
-        // Output
-        document.getElementById("ostaa").innerHTML=text
-      })
-}
+// // this function helps parse and output the get requests
+// function getGet(){
+//   let path = "/get/";
+//   req = fetch(path)
+//       req.then((response) => {
+//           return response.text();
+//         })
+//       .then((text) => {
+//         // Output
+//         document.getElementById("ostaa").innerHTML=text
+//       })
+// }
