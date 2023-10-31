@@ -52,15 +52,15 @@ req = fetch(path ,{
 )
 }
 
-// // this function helps parse and output the get requests
-// function getGet(){
-//   let path = "/get/";
-//   req = fetch(path)
-//       req.then((response) => {
-//           return response.text();
-//         })
-//       .then((text) => {
-//         // Output
-//         document.getElementById("ostaa").innerHTML=text
-//       })
-// }
+// this function helps parse and output the get requests
+function getGet(){
+  let path = "/get/";
+  req = fetch(path)
+      req.then((response) => {
+          return response.text();
+        })
+      .then((text) => {
+        // Output
+        document.getElementById("ostaa").innerHTML=text
+      })
+}
